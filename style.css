@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+
+ @keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: heroIn 1s ease-out;
+}
