@@ -19,12 +19,26 @@
     <header>
       <div class="bg-blue-950 flex items-center justify-evenly w-full p-3">
         <div class=""><img src="./assets/TechWave.png" alt="" /></div>
-        <!-- sm er jonno  -->
+
         <div class="">
-          <ul class="hidden sm:flex sm:gap-9 sm:p-4 sm:text-white">
-            <li class="">About</li>
-            <li>Episodes</li>
-            <li>Host</li>
+          <ul
+            class="hidden sm:flex sm:gap-9 sm:p-4 sm:text-white sm:transition-all sm:duration-300 sm:ease-out"
+          >
+            <li
+              class="sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-1"
+            >
+              About
+            </li>
+            <li
+              class="sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-1"
+            >
+              Episodes
+            </li>
+            <li
+              class="sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-1"
+            >
+              Host
+            </li>
           </ul>
         </div>
         <div class="sm:hidden">
@@ -32,7 +46,7 @@
         </div>
 
         <button
-          class="hidden sm:block sm:w-[135px] sm:h-[44px] sm:bg-gradient-to-tr sm:from-yellow-300 sm:via-pink-500 sm:to-blue-500 sm:rounded-md sm:text-white sm:font-bold sm:hover:bg-gradient-to-r sm:from-red-500 sm:to-blue-400"
+          class="hidden sm:block sm:w-[135px] sm:h-[44px] sm:bg-gradient-to-tr sm:from-yellow-300 sm:via-pink-500 sm:to-blue-500 sm:rounded-3xl sm:text-white sm:font-bold sm:hover:bg-gradient-to-r sm:from-red-500 sm:to-blue-400 sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-1"
         >
           Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
@@ -44,29 +58,29 @@
     <section>
       <div class="relative">
         <div class="relative">
-          <img class="h-96 sm:h-full" src="./assets/hero-bg.png" alt="" />
+          <img class="h-[50vh] w-full sm:h-[50vh] w-full" src="./assets/hero-bg.png" alt="" />
         </div>
 
         <div
-          class="absolute top-[20%] left-[39%] w-[23%] sm:top-[15%] sm:left-[39%] sm:w-[22%]"
+          class="absolute top-[24%] left-[39%] w-[23%] sm:top-[18%] sm:left-[39%] sm:w-[22%]"
         >
           <img class="" src="./assets/hero-circle.png" alt="" />
         </div>
 
         <div
-          class="absolute top-[26%] left-[46%] w-[9%] sm:top-[27%] sm:left-[46%]"
+          class="absolute top-[28%] left-[46%] w-[9%] sm:absolute sm:top-[23%] sm:left-[46%] sm:top-[25%] sm:left-[46%] sm:-translate-x-1"
         >
           <img class="" src="./assets/microphone.png" alt="" />
         </div>
 
         <div
-          class="absolute top-[19%] left-[57%] bg-green-500 p-1 text-xs font-bold rounded-3xl sm:absolute sm:top-[12%] sm:left-[50%] sm:bg-green-400 sm:p-[4px] sm:rounded-2xl sm:text-sm sm:font-extrabold sm:top-[17%] sm:left-[56%]"
+          class="absolute top-[23%] left-[57%] bg-green-500 p-1 text-xs font-bold rounded-3xl sm:absolute sm:top-[12%] sm:left-[50%] sm:bg-green-400 sm:p-[4px] sm:rounded-2xl sm:text-sm sm:font-extrabold sm:top-[17%] sm:left-[56%]"
         >
           NEW
         </div>
 
         <div
-          class="absolute top-[45%] left-4 text-center p-9 text-white items-center justify-center sm:absolute sm:top-[65%] sm:left-[33%] sm:text-amber-50 sm:text-center"
+          class="absolute top-[45%] left-[6%] text-center p-9 text-white items-center justify-center sm:p-10 sm:left-[8%] sm:top-[48%] lg:absolute lg:top-[65%] lg:left-[32%] lg:text-amber-50 lg:text-center"
         >
           <h1
             class="text-4xl font-extrabold pb-2 sm:text-3xl sm:font-extrabold"
@@ -78,27 +92,49 @@
             growth
           </p>
 
-          <!-- button  -->
-          <div class="m-7 flex gap-8 pl-8">
+          <div
+          class="flex sm:flex-row items-center justify-center gap-4 sm:gap-8 pt-7">
+
+
+          
             <button
-              class="p-3 bg-gradient-to-tr from-yellow-300 via-pink-500 to-blue-500 rounded-md text-white font-bold hover:bg-gradient-to-r from-red-500 to-blue-400"
+              class="  bg-gradient-to-tr from-yellow-300 via-pink-500 to-blue-500
+  px-4 py-2.5 sm:px-5 sm:py-3
+  rounded-3xl
+  font-bold
+  text-sm sm:text-base
+  text-white
+
+  transition duration-300 ease-out
+  hover:-translate-y-1
+  hover:bg-gradient-to-r hover:from-red-500 hover:to-blue-400
+  "
             >
               <i class="fa-brands fa-spotify me-3"></i>Listen on Spotify
             </button>
 
             <button
-              class="p-3 bg-amber-800 bg-gradient-to-tr from-yellow-300 via-pink-500 to-blue-500 rounded-md text-white font-bold hover:bg-gradient-to-r from-red-500 to-blue-400"
+              class=" border-2 border-[#00FF88]
+  px-4 py-2.5 sm:px-5 sm:py-3
+  rounded-3xl
+  font-bold
+  text-sm sm:text-base
+  text-[#00FF88]
+
+  transition duration-300 ease-out
+  hover:-translate-y-1
+  "
             >
               <i class="fa-solid fa-envelope me-3"></i>Subscribe
             </button>
-          </div>
+          </class=>
         </div>
       </div>
     </section>
 
     <!-- about section  -->
 
-    <section class="">
+    <!-- <section class="">
       <div class="bg-[#1A0B2E] py-14 sm:bg-[#1A0B2E] sm:pb-20">
         <div
           class="w-4/5 my-0 mx-auto text-center sm:text-white sm:text-center sm:w-2/4 sm:my-0 sm:mx-auto"
@@ -157,7 +193,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <!-- Why Choose TechWave -->
 
     <section class="bg-[#230E3D] sm:bg-[#230E3D] pb-8">
@@ -167,9 +204,11 @@
         <h1>Why Choose TechWave</h1>
       </div>
 
-      <div class="sm:w-3/4 my-0 mx-auto">
-        <div class="sm:grid grid-cols-3 grid-rows-3">
-          <div class="row-span-2 bg-[#351165] m-5 p-8 rounded-2xl">
+      <div class="sm:w-3/4 sm:my-0 sm:mx-auto">
+        <div class="grid-cols-1 sm:grid grid-cols-3 grid-rows-3">
+          <div
+            class="bg-[#351165] m-5 p-8 rounded-2xl sm:row-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-2"
+          >
             <img src="./assets/headphone.png" alt="" />
             <h1 class="text-xl text-white pt-5 font-bold sm:text-2xl sm:pt-6">
               Premium Audio Quality
@@ -183,63 +222,60 @@
             </p>
           </div>
           <div
-            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl"
+            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-2"
           >
             <img src="./assets/device.png" alt="" />
             <h1 class="text-xl text-white pt-5 font-bold sm:text-2xl sm:pt-6">
-              Premium Audio Quality
+              Mobile Friendly
             </h1>
             <p
               class="text-md text-gray-400 pt-4 sm:text-md sm:text-gray-400 sm:pt-4"
             >
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Listen on the go with seamless mobile experience and offline
+              downloads.
             </p>
           </div>
           <div
-            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl"
+            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-2"
           >
             <img src="./assets/location.png" alt="" />
             <h1 class="text-xl text-white pt-5 font-bold sm:text-2xl sm:pt-6">
-              Premium Audio Quality
+              Global Community
             </h1>
             <p
               class="text-md text-gray-400 pt-4 sm:text-md sm:text-gray-400 sm:pt-4"
             >
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Connect with tech enthusiasts from over 120 countries worldwide.
             </p>
           </div>
           <div
-            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl"
+            class="bg-[#351165] m-5 p-8 rounded-2xl sm:col-span-2 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-2"
           >
             <img src="./assets/resource.png" alt="" />
             <h1 class="text-xl text-white pt-5 font-bold sm:text-2xl sm:pt-6">
-              Premium Audio Quality
+              Exclusive Interviews
             </h1>
             <p
               class="text-md text-gray-400 pt-4 sm:text-md sm:text-gray-400 sm:pt-4"
             >
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Get unprecedented access to industry titans, startup founders, and
+              tech visionaries. Our host secures exclusive conversations you
+              won't find anywhere else, diving deep into their journeys,
+              failures, and success strategies.
             </p>
           </div>
           <div
-            class="bg-[#351165] m-5 p-8 rounded-2xl sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl"
+            class="bg-[#351165] m-5 p-8 rounded-2xl sm:row-span-1 sm:bg-[#351165] sm:m-5 sm:p-8 sm:rounded-2xl sm:transition-all sm:duration-300 sm:ease-out sm:hover:-translate-y-2"
           >
             <img src="./assets/zap-fast.png" alt="" />
             <h1 class="text-xl text-white pt-5 font-bold sm:text-2xl sm:pt-6">
-              Premium Audio Quality
+              Rich Resources
             </h1>
             <p
               class="text-md text-gray-400 pt-4 sm:text-md sm:text-gray-400 sm:pt-4"
             >
-              Experience crystal-clear sound with professional-grade recording
-              equipment and expert audio engineering. Every episode is mastered
-              for optimal listening across all devices and platforms.
+              Access show notes, transcripts, and additional learning materials
+              for every episode.
             </p>
           </div>
         </div>
@@ -328,82 +364,151 @@
       </div>
     </section> -->
 
-    
-    
-    
-    <section>
+    <section class="">
+      <div class="bg-[#1A0B2E] text-white py-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Featured Episodes</h2>
 
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div
+            class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg sm:hover:-translate-y-4 sm:hover:scale-110 sm:hover:transition-all sm:hover:duration-300 sm:hover:shadow-xl"
+          >
+            <div class="aspect-video w-full">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/z58Sh8IndkY?si=xRIlklxlHA8Muaq4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-
-      <div class="bg-[#1A0B2E] text-white p-5">
-  
-  <h2 class="text-3xl font-bold text-center mb-10">Featured Episodes</h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    
-    <div class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg">
-      <div class="aspect-video w-full">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z58Sh8IndkY?si=xRIlklxlHA8Muaq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="text-lg font-bold">
+                The Future of AI in Everyday Life
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+              <p class="text-green-500 text-xs pt-3">
+                <i class="fa-solid fa-clock"></i> 42 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg sm:hover:-translate-y-4 sm:hover:scale-110 sm:hover:transition-all sm:hover:duration-300 sm:hover:shadow-xl"
+          >
+            <div class="aspect-video w-full">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/sMbDwjAcSV0?si=jEHkgbBTsUFAr6PH"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold">
+                Building Better Habits for Remote Work
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Practical strategies for staying productive and maintaining
+                work-life balance in a remote environment.
+              </p>
+              <p class="text-green-500 text-xs pt-3">
+                <i class="fa-solid fa-clock"></i> 35 min
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg sm:hover:-translate-y-4 sm:hover:scale-110 sm:hover:transition-all sm:hover:duration-300 sm:hover:shadow-xl"
+          >
+            <div class="aspect-video w-full">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/S-gIFz-uYNw?si=cERiR_fLjrfRZPPV"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold">
+                Career Growth in Tech: A Roadmap
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Expert advice on navigating your tech career from junior
+                developer to senior leadership roles.
+              </p>
+              <p class="text-green-500 text-xs pt-3">
+                <i class="fa-solid fa-clock"></i> 51 min
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="p-4">
-        <h3 class="text-lg font-bold">The Future of AI in Everyday Life</h3>
-        <p class="text-gray-400 text-sm mt-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-        <p class="text-green-500 text-xs mt-4">● 42 min</p>
-      </div>
-    </div>
-    <div class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg">
-      <div class="aspect-video w-full">
-        <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/sMbDwjAcSV0?si=jEHkgbBTsUFAr6PH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Building Better Habits for Remote Work</h3>
-        <p class="text-gray-400 text-sm mt-2">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
-        <p class="text-green-500 text-xs mt-4">● 35 min</p>
-      </div>
-    </div>
-    <div class="bg-[#250D44] rounded-2xl overflow-hidden shadow-lg">
-      <div class="aspect-video w-full">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S-gIFz-uYNw?si=cERiR_fLjrfRZPPV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="p-4">
-        <h3 class="text-lg font-bold">Career Growth in Tech: A Roadmap</h3>
-        <p class="text-gray-400 text-sm mt-2">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
-        <p class="text-green-500 text-xs mt-4">● 51 min</p>
-      </div>
-    </div>
-    </div>
-</div>
     </section>
-    
-    
 
-
-
-
-    
-    
-    
-    
-    
-    
     <!-- Meet the Host -->
 
-    <section class="pb-9 sm:py-10 bg-blue-500 w-full">
+    <section
+      class="pb-9 bg-[#1A0B2E] w-full sm:py-10 sm:bg-[#1A0B2E] sm:w-full"
+    >
       <div
-        class="text-center text-6xl font-bold sm:text-center text-4xl font-bold"
+        class="text-center text-6xl font-bold py-5 sm:text-center sm:text-4xl sm:font-bold"
       >
-        <h1 class="sm:text-green-500">Meet the Host</h1>
+        <h1 class="py-9 text-white text-2xl sm:text-white text-7xl">
+          Meet the Host
+        </h1>
       </div>
       <div
-        class="text-center w-full rounded-2xl sm:flex w-[70%] my-20 mx-auto border-2 border-amber-700 p-10 items-center justify-center"
+        class="text-center w-[80%] my-0 mx-auto rounded-2xl bg-[#351165] p-6 sm:flex sm:w-[70%] sm:my-20 sm:mx-auto sm:bg-[#351165] sm:p-10 sm:items-center sm:justify-center"
       >
-        <div class="sm:w-[500px]">
+        <div class="w-[80%] ml-7 sm:w-[500px]">
           <img class="w-full" src="./assets/host.png" alt="" />
         </div>
-        <div class="m-7">
-          <h1 class="text-2xl font-bold pb-4">Alex Kumar</h1>
-          <p class="text-sm font-semibold pb-5">
+        <div class="m-7 sm:m-7">
+          <h1
+            class="text-3xl text-white font-bold p-4 sm:text-4xl sm:font-bold sm:pb-4"
+          >
+            Alex Kumar
+          </h1>
+          <p
+            class="text-sm font-semibold text-gray-400 pb-7 sm:text-sm sm:font-semibold sm:pb-5 sm:text-gray-400"
+          >
             Tech entrepreneur, productivity expert, and lifelong learner. Alex
             has been in the tech industry for over 10 years, working with
             startups and Fortune 500 companies. Through TechWave, Alex shares
@@ -412,7 +517,7 @@
           </p>
 
           <div
-            class="flex items-center justify-center sm:flex gap-6 items-center justify-center"
+            class="flex gap-8 items-center justify-center sm:flex sm:items-center sm:justify-center sm:flex sm:gap-6 sm:items-center sm:justify-center"
           >
             <div class=""><img src="./assets/linkedin.png" alt="" /></div>
             <div><img src="./assets/x.png" alt="" /></div>
